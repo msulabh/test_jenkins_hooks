@@ -1,29 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Trace</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUBG Front Page</title>
     <style>
-        /* Add your CSS styles here */
-        body {
+        body, html {
+            margin: 0;
+            padding: 0;
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-	    color: black;
+            height: 100%;
         }
-        h1 {
-            color: #0074d9;
+
+        header {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        main {
+            background-image: url('https://example.com/pubg-background.jpg');
+            background-size: cover;
+            background-position: center;
+            height: calc(100% - 60px); /* Adjust height based on header */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        button {
+            background-color: #ffcc00;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #e6b800;
         }
     </style>
-    <script>
-        // Add your JavaScript code here
-        function greet() {
-            alert("Hello, world!");
-        }
-    </script>
 </head>
 <body>
-    <h1>My Second Heading</h1>
-    <p>My first paragraph.</p>
-    <button onclick="greet()">Click me</button>
+    <header>
+        <h1>Welcome to PUBG</h1>
+    </header>
+    <main>
+        <div class="content">
+            <h2>Battle Royale</h2>
+            <p>Join the ultimate battle for survival.</p>
+            <button>Play Now</button>
+        </div>
+    </main>
 </body>
 </html>
 
