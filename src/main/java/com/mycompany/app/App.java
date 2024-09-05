@@ -31,6 +31,7 @@ public class FeedbackTable {
         frame.add(scrollPane);
 
         // Set the frame visibility to true
+	// HO jhy gh
         frame.setVisible(true);
     }
 }
